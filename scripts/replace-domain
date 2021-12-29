@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CURRENT_DOMAIN="khuedoan.com"
+CURRENT_DOMAIN="yoloboys.com"
 
 git grep "${CURRENT_DOMAIN}" -- apps platform system scripts | cut -d ':' -f1 | uniq | while read p; do
   sed -i "s/${CURRENT_DOMAIN}/${1}/g" $p
